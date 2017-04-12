@@ -62,8 +62,8 @@ def deter_dev(nstuts, hstuts):
 ------------------------------------邮件初始设置---------------------------------------
 '''
 # 发件地址
-from_addr = 'punkfisher@sina.com'
-password = 'w23256010'
+from_addr = '**********'
+password = '********'
 smtp_server = 'smtp.sina.com.cn'
 # 收件人地址:
 to_addr = '13661803509@139.com, 13002503523@wo.cn'
