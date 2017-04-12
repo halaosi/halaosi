@@ -108,22 +108,6 @@ if __name__ == '__main__':
         msg['From'] = _format_addr('小魏<%s>' % from_addr)
         # 收件人随便
         msg['To'] = _format_addr(to_addr)
-        #
-        # server = smtplib.SMTP(smtp_server, 25)
-        # server.set_debuglevel(1)
-        # server.login(from_addr, password)
-        #
-        # if deter == 1:
-        #     print('%str'%str(cd) + '现价：%s'%str(rtprice) + 'ME18:%s'%str(me18))
-        #     msg['Subject'] = Header('%s'%str(cd) +'上穿ME18,现价'+'%s' %str(rtprice), 'utf-8').encode()
-        #     server.sendmail(from_addr, [to_addr], msg.as_string())
-        # elif deter == -1:
-        #     print('%str'%str(cd) + '现价：%s'%str(rtprice) + 'ME18:%s'%str(me18))
-        #     msg['Subject'] = Header('%s'%str(cd) +'下穿ME18,现价'+'%s' %str(rtprice), 'utf-8').encode()
-        #     server.sendmail(from_addr, [to_addr], msg.as_string())
-        # else:
-        #     print('%str'%str(cd) + ' current price: %s'%str(rtprice) + ';ME18: %s'%str(me18))
-        # server.quit()
 
         if deter != 0:
             server = smtplib.SMTP(smtp_server, 25)
